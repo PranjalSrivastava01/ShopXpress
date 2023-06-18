@@ -14,6 +14,7 @@ const items = [
         ratings:"1k",
         cost_for_two:999,
         cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -24,7 +25,8 @@ const items = [
         adress:"Richmond Town, Ashok Nagar ",
         ratings:"500",
         cost_for_two:450,
-        cuisines:"north Indian, South Indian"
+        cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"103",
@@ -35,8 +37,8 @@ const items = [
         adress:"Residency Road, Shantinagar",
         ratings:"100",
         cost_for_two:430,
-        cuisines:"north Indian, South Indian"
-
+        cuisines:"north Indian, South Indian",
+         qty:1,
       }
     ]
   },
@@ -55,6 +57,7 @@ const items = [
         ratings:"1k",
         cost_for_two:999,
         cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"202",
@@ -65,7 +68,8 @@ const items = [
         adress:"Richmond Town, Ashok Nagar ",
         ratings:"500",
         cost_for_two:450,
-        cuisines:"north Indian, South Indian"
+        cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"203",
@@ -77,7 +81,8 @@ const items = [
         ratings:"100",
         cost_for_two:430,
         cuisines:"north Indian, South Indian"
-
+        ,
+        qty:1,
       }
     ]
   },
@@ -96,6 +101,7 @@ const items = [
         ratings:"1k",
         cost_for_two:999,
         cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -106,7 +112,8 @@ const items = [
         adress:"Richmond Town, Ashok Nagar ",
         ratings:"500",
         cost_for_two:450,
-        cuisines:"north Indian, South Indian"
+        cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -117,7 +124,8 @@ const items = [
         adress:"Residency Road, Shantinagar",
         ratings:"100",
         cost_for_two:430,
-        cuisines:"north Indian, South Indian"
+        cuisines:"north Indian, South Indian",
+        qty:1,
 
       }
     ]
@@ -137,6 +145,7 @@ const items = [
         ratings:"1k",
         cost_for_two:999,
         cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -147,7 +156,8 @@ const items = [
         adress:"Richmond Town, Ashok Nagar ",
         ratings:"500",
         cost_for_two:450,
-        cuisines:"north Indian, South Indian"
+        cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -159,6 +169,8 @@ const items = [
         ratings:"100",
         cost_for_two:430,
         cuisines:"north Indian, South Indian"
+        ,
+        qty:1,
 
       }
     ]
@@ -178,6 +190,7 @@ const items = [
         ratings:"1k",
         cost_for_two:999,
         cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -188,7 +201,8 @@ const items = [
         adress:"Richmond Town, Ashok Nagar ",
         ratings:"500",
         cost_for_two:450,
-        cuisines:"north Indian, South Indian"
+        cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -199,7 +213,8 @@ const items = [
         adress:"Residency Road, Shantinagar",
         ratings:"100",
         cost_for_two:430,
-        cuisines:"north Indian, South Indian"
+        cuisines:"north Indian, South Indian",
+        qty:1,
 
       }
     ]
@@ -219,6 +234,7 @@ const items = [
         ratings:"1k",
         cost_for_two:999,
         cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -229,7 +245,8 @@ const items = [
         adress:"Richmond Town, Ashok Nagar ",
         ratings:"500",
         cost_for_two:450,
-        cuisines:"north Indian, South Indian"
+        cuisines:"north Indian, South Indian",
+        qty:1,
       },
       {
         id:"102",
@@ -240,8 +257,8 @@ const items = [
         adress:"Residency Road, Shantinagar",
         ratings:"100",
         cost_for_two:430,
-        cuisines:"north Indian, South Indian"
-
+        cuisines:"north Indian, South Indian",
+        qty:1,
       }
     ]
   },

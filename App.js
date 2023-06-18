@@ -5,6 +5,7 @@ import {MyTabs} from './navigation/BottomNavigation';
 import {OnboardingScreenNavigation} from './navigation/BottomNavigation';
 import { Provider } from 'react-redux';
 import store from './screens/Redux/store/Store';
+import { useSelector } from 'react-redux';
 const App = () => {
   return (
     <>

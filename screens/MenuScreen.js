@@ -4,10 +4,20 @@ import Icon from 'react-native-vector-icons/AntDesign'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import Fontisto from 'react-native-vector-icons/Fontisto'
+import { useState } from 'react'
 import { Button } from 'react-native-paper';
+
 const MenuScreen = ({navigation,route}) => {
   const itemd=route.params.itemsd;
   const onAddToCart = route.params.onAddToCart;
+  const onRemoveItem=route.params.onRemoveItem;
+  const MyFun = (item) => {
+    try {
+      onAddToCart(item);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <ScrollView style={{flex:1}}>
       <View style={styles.childContainer}>
@@ -26,11 +36,11 @@ const MenuScreen = ({navigation,route}) => {
      
       <Text style={styles.subTitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</Text>
       </View>
-      <View>
-      <Button theme={{ colors: { primary: '#E52B50' } }} rippleColor={'pink'} textColor='white' icon="cart" mode="contained" onPress={() =>onAddToCart(itemd)}>Add to cart</Button>
-      </View>
+        <View>
+        <Button theme={{ colors: { primary: '#E52B50' } }} rippleColor={'pink'} textColor='white' isAddedicon="cart" mode="contained" onPress={() =>MyFun(itemd)}>Add to cart</Button>
+        </View>
       <View style = {{marginLeft: 10,marginTop:10}}>
-            <Text style = {{fontSize:16, fontWeight:'bold'}}>Details:</Text>
+            <Text style = {{fontSize:16}}>Details:</Text>
             <View style = {styles.descStyle}>
                 <MaterialCommunityIcons name="star-circle" size={24} color="green" />
                 <Text style = {{marginLeft: 3, fontSize: 15 ,fontWeight: '400'}}>{itemd.rating}</Text>

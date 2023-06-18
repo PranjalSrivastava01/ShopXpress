@@ -18,10 +18,13 @@ import SignUp from '../screens/SignUp';
 import OtpVerify from '../screens/OtpVerify';
 import WishList from '../screens/WishList';
 import Cart from '../screens/Cart';
+import CartListScreen from '../screens/CartListSceen';
+import { useSelector } from 'react-redux';
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
-
 const OnboardingScreenNavigation = () => {
+  const items = useSelector(state => state);
+  console.log(items);
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -96,14 +99,14 @@ const MyTabs = () => {
           }}
         />
         <Tab.Screen
-          name="WishiList"
+          name="MyCart"
           component={CartNavigator}
           options={{
             headerShown: false,
             tabBarIcon: ({focused}) => {
               return (
                 <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                  <Icon name="heart" size={25} color={'#E52B50'} />
+                  <Icon name="shopping-cart" size={25} color={'#E52B50'} />
                 </View>
               );
             },
@@ -137,6 +140,11 @@ const StackNavigation = () => {
       <Stack.Screen
         name="MenuScreen"
         component={MenuScreen}
+        options={{headerShown: false}}
+      />
+        <Stack.Screen
+        name="CartListScreen"
+        component={CartListScreen}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -186,7 +194,7 @@ const CartNavigator = () => {
         name="WishList"
         component={WishList}
         options={{
-          title: 'WishList',
+          title: 'MyCart',
           headerLeft: () => null,
           headerTitleAlign: 'center',
         }}

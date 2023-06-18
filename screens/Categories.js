@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ScrollView, SafeAreaView, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import items from '../data/Category'
-
+import { useSelector } from 'react-redux'
 const Categories = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
